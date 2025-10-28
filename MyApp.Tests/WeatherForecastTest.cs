@@ -1,4 +1,5 @@
 using FluentAssertions;
+using MyApp.Core;
 
 namespace MyApp.Tests;
 
@@ -21,5 +22,11 @@ public class WeatherForecastTest
             summaries[2]
         );
         result.Should().Be(new WeatherForecast(date, 28, "Chilly"));
+    }
+
+    [Fact]
+    public void generatesWeatherList()
+    {
+        WeatherService.ProvideWeatherForecasts().Should().HaveCount(5);
     }
 }
