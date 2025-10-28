@@ -1,3 +1,5 @@
+using MyApp.Core;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -14,32 +16,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering",
-    "Scorching"
-};
 
-app.MapGet("/weatherforecast", HandleWeatherForecast(summaries))
+
+app.MapGet("/weatherforecast", () =>
+    {
+        return WeatherService.ProvideWeatherForecasts();
+    })
     .WithName("GetWeatherForecast");
 
 app.Run();
-
-Func<WeatherForecast[]> HandleWeatherForecast(string[] weatherSummaries)
-{
-    return () =>
-    {
-        var forecast = Enumerable.Range(1, 5).Select(index =>
-            {
-                var next = Random.Shared.Next(weatherSummaries.Length);
-                return new WeatherForecast
-                (
-                    DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    Random.Shared.Next(-20, 55),
-                    weatherSummaries[next]
-                );
-            })
-            .ToArray();
-        return forecast;
-    };
-}
