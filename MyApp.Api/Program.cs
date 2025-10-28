@@ -20,21 +20,26 @@ var summaries = new[]
     "Scorching"
 };
 
-app.MapGet("/weatherforecast", () =>
+app.MapGet("/weatherforecast", HandleWeatherForecast(summaries))
+    .WithName("GetWeatherForecast");
+
+app.Run();
+
+Func<WeatherForecast[]> HandleWeatherForecast(string[] weatherSummaries)
+{
+    return () =>
     {
         var forecast = Enumerable.Range(1, 5).Select(index =>
             {
-                var next = Random.Shared.Next(summaries.Length);
+                var next = Random.Shared.Next(weatherSummaries.Length);
                 return new WeatherForecast
                 (
                     DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                     Random.Shared.Next(-20, 55),
-                    summaries[next]
+                    weatherSummaries[next]
                 );
             })
             .ToArray();
         return forecast;
-    })
-    .WithName("GetWeatherForecast");
-
-app.Run();
+    };
+}

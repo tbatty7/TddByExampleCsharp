@@ -9,12 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd8fba98-56f1-4318-a141-eef287832bc1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MyApp.Core/WeatherForecast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyApp.Tests/WeatherForecastTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TddByExampleCsharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TddByExampleCsharp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyApp.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyApp.Tests/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Tests/UnitTest1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TddByExampleCsharp.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/TddByExampleCsharp.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApp.Core/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApp.Core/WeatherForecast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Core/WeatherForecast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApp.Tests/UnitTest1.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +36,7 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -107,16 +107,28 @@
       <option name="presentableId" value="Default" />
       <updated>1761680147086</updated>
       <workItem from="1761680148158" duration="885000" />
-      <workItem from="1761681062609" duration="2880000" />
+      <workItem from="1761681062609" duration="4127000" />
     </task>
+    <task id="LOCAL-00001" summary="Moved testable code to Core and generated test">
+      <option name="closed" value="true" />
+      <created>1761683975515</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1761683975515</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Moved testable code to Core and generated test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved testable code to Core and generated test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
