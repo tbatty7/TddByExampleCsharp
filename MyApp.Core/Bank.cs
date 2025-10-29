@@ -4,8 +4,8 @@ namespace MyApp.Tests;
 
 public class Bank
 {
-    public Money reduce(Expression sum, string currency)
+    public Money reduce(Expression source, string toCurrency)
     {
-        return Money.dollar(10);
+        return source.reduce(toCurrency);
     }
 }

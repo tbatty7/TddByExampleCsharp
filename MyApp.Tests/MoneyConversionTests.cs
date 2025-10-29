@@ -39,4 +39,32 @@ public class MoneyConversionTests
         var reduced = bank.reduce(sum, "USD");
         reduced.Should().Be(Money.dollar(10));
     }
+
+    [Fact]
+    public void testPlusReturnsSum()
+    {
+        var five = Money.dollar(5);
+        var result = five.plus(five);
+        var sum = (Sum)result;
+        Assert.Equal(five, sum.Augend);
+        Assert.Equal(five, sum.Addend);
+    }
+
+    [Fact]
+    public void testReduceSum()
+    {
+        Expression sum = new Sum(Money.dollar(3), Money.dollar(4));
+        var bank = new Bank();
+        var result = bank.reduce(sum, "USD");
+        Assert.Equal(Money.dollar(7), result);
+    }
+
+    [Fact]
+    public void testReduceMoney()
+    {
+        var dollar = Money.dollar(1);
+        var bank = new Bank();
+        var result = bank.reduce(dollar, "USD");
+        Assert.Equal(dollar, result);
+    }
 }

@@ -1,11 +1,13 @@
+using MyApp.Tests;
+
 namespace MyApp.Core;
 
 public class Money : Expression
 {
-    private int Amount { get; }
+    public int Amount { get; }
     private string Currency { get; }
 
-    private Money(int amount, string currency)
+    public Money(int amount, string currency)
     {
         Amount = amount;
         Currency = currency;
@@ -44,6 +46,11 @@ public class Money : Expression
 
     public Expression plus(Money addend)
     {
-        return new Money(Amount + addend.Amount, Currency);
+        return new Sum(this, addend);
+    }
+
+    public Money reduce(string toCurrency)
+    {
+        return this;
     }
 }
