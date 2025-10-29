@@ -30,4 +30,13 @@ public class MoneyConversionTests
         Money.dollar(1).currency().Should().Be("USD");
         Money.franc(1).currency().Should().Be("CHF");
     }
+
+    [Fact]
+    public void testSimpleAddition()
+    {
+        var sum = Money.dollar(5).plus(Money.dollar(5));
+        var bank = new Bank();
+        var reduced = bank.reduce(sum, "USD");
+        reduced.Should().Be(Money.dollar(10));
+    }
 }

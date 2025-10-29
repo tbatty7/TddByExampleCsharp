@@ -1,11 +1,11 @@
 namespace MyApp.Core;
 
-public class Money
+public class Money : Expression
 {
-    protected int Amount { get; init; }
-    protected string Currency { get; init; }
+    private int Amount { get; }
+    private string Currency { get; }
 
-    public Money(int amount, string currency)
+    private Money(int amount, string currency)
     {
         Amount = amount;
         Currency = currency;
@@ -40,5 +40,10 @@ public class Money
     public override string ToString()
     {
         return $"{Amount} {Currency}";
+    }
+
+    public Expression plus(Money addend)
+    {
+        return new Money(Amount + addend.Amount, Currency);
     }
 }
