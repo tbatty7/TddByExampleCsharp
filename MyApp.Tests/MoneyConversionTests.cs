@@ -43,4 +43,10 @@ public class MoneyConversionTests
         Money.dollar(1).currency().Should().Be("USD");
         Money.franc(1).currency().Should().Be("CHF");
     }
+
+    [Fact]
+    public void testDifferentClassEquality()
+    {
+        Assert.True(new Franc(5, "CHF").Equals(new Money(5, "CHF")));
+    }
 }
