@@ -9,6 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd8fba98-56f1-4318-a141-eef287832bc1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MyApp.Core/Franc.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TddByExampleCsharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TddByExampleCsharp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyApp.Core/Dollar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Core/Dollar.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyApp.Tests/MoneyConversionTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Tests/MoneyConversionTests.cs" afterDir="false" />
@@ -110,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1761680147086</updated>
       <workItem from="1761680148158" duration="885000" />
-      <workItem from="1761681062609" duration="9192000" />
+      <workItem from="1761681062609" duration="10273000" />
     </task>
     <task id="LOCAL-00001" summary="Moved testable code to Core and generated test">
       <option name="closed" value="true" />
@@ -152,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761754917919</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="finished chapter 3">
+      <option name="closed" value="true" />
+      <created>1761755983813</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1761755983813</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +176,8 @@
     <MESSAGE value="Move function to WeatherService.cs" />
     <MESSAGE value="Added test for WeatherService" />
     <MESSAGE value="Completed TDD by Example Chapter 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed TDD by Example Chapter 1" />
+    <MESSAGE value="finished chapter 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished chapter 3" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

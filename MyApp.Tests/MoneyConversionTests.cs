@@ -8,13 +8,11 @@ public class MoneyConversionTests
     public void testMultiplication()
     {
         Dollar five = new Dollar(5);
-        Dollar product = five.times(2);
-        product.Amount.Should().Be(10);
-        Assert.Equal(10, product.Amount);
+        five.times(2).Should().Be(new Dollar(10));
+        Assert.Equal(new Dollar(10), five.times(2));
 
-        Dollar product2 = five.times(3);
-        product2.Amount.Should().Be(15);
-        Assert.Equal(15, product2.Amount);
+        five.times(3).Should().Be(new Dollar(15));
+        Assert.Equal(new Dollar(15), five.times(3));
     }
 
     [Fact]
@@ -22,5 +20,16 @@ public class MoneyConversionTests
     {
         Assert.True(new Dollar(5).Equals(new Dollar(5)));
         Assert.False(new Dollar(5).Equals(new Dollar(6)));
+    }
+
+    [Fact]
+    public void testFrancMultiplication()
+    {
+        Franc five = new Franc(5);
+        five.times(2).Should().Be(new Franc(10));
+        Assert.Equal(new Franc(10), five.times(2));
+
+        five.times(3).Should().Be(new Franc(15));
+        Assert.Equal(new Franc(15), five.times(3));
     }
 }
