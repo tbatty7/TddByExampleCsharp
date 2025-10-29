@@ -10,8 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bd8fba98-56f1-4318-a141-eef287832bc1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TddByExampleCsharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TddByExampleCsharp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyApp.Core/Dollar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Core/Dollar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyApp.Core/Franc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Core/Franc.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApp.Core/Dollar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApp.Core/Franc.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MyApp.Core/Money.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Core/Money.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyApp.Tests/MoneyConversionTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Tests/MoneyConversionTests.cs" afterDir="false" />
     </list>
@@ -116,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1761680147086</updated>
       <workItem from="1761680148158" duration="885000" />
-      <workItem from="1761681062609" duration="17668000" />
+      <workItem from="1761681062609" duration="18338000" />
     </task>
     <task id="LOCAL-00001" summary="Moved testable code to Core and generated test">
       <option name="closed" value="true" />
@@ -214,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761765122690</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="completed chapter 10">
+      <option name="closed" value="true" />
+      <created>1761766417712</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1761766417712</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +245,8 @@
     <MESSAGE value="completed chapter 7" />
     <MESSAGE value="completed chapter 8" />
     <MESSAGE value="completed chapter 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed chapter 9" />
+    <MESSAGE value="completed chapter 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed chapter 10" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

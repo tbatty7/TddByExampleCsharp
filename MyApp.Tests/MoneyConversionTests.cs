@@ -21,20 +21,7 @@ public class MoneyConversionTests
     {
         Assert.True(Money.dollar(5).Equals(Money.dollar(5)));
         Assert.False(Money.dollar(5).Equals(Money.dollar(6)));
-        Assert.True(new Franc(5, "CHF").Equals(new Franc(5, "CHF")));
-        Assert.False(new Franc(5, "CHF").Equals(new Franc(6, "CHF")));
-        Assert.False(Money.dollar(5).Equals(new Franc(5, "CHF")));
-    }
-
-    [Fact]
-    public void testFrancMultiplication()
-    {
-        var five = Money.franc(5);
-        five.times(2).Should().Be(new Franc(10, "CHF"));
-        Assert.Equal(new Franc(10, "CHF"), five.times(2));
-
-        five.times(3).Should().Be(new Franc(15, "CHF"));
-        Assert.Equal(new Franc(15, "CHF"), five.times(3));
+        Assert.False(Money.dollar(5).Equals(Money.franc(5)));
     }
 
     [Fact]
@@ -42,11 +29,5 @@ public class MoneyConversionTests
     {
         Money.dollar(1).currency().Should().Be("USD");
         Money.franc(1).currency().Should().Be("CHF");
-    }
-
-    [Fact]
-    public void testDifferentClassEquality()
-    {
-        Assert.True(new Franc(5, "CHF").Equals(new Money(5, "CHF")));
     }
 }
