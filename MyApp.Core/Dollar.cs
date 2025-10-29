@@ -1,9 +1,9 @@
+using MyApp.Core;
+
 namespace MyApp.Tests;
 
-public class Dollar
+public class Dollar : Money
 {
-    public int Amount { get; init; }
-
     public Dollar(int amount)
     {
         Amount = amount;
@@ -12,11 +12,5 @@ public class Dollar
     public Dollar times(int multiplier)
     {
         return new Dollar(Amount * multiplier);
-    }
-
-    public override bool Equals(Object other)
-    {
-        Dollar? otherDollar = other as Dollar;
-        return Amount == otherDollar.Amount;
     }
 }
