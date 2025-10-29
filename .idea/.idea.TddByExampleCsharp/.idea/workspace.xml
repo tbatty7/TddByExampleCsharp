@@ -31,6 +31,7 @@
     <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/Dollar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Core/Dollar.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/Money.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Core/Money.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Core/WeatherForecast.cs" root0="SKIP_HIGHLIGHTING" />
@@ -115,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1761680147086</updated>
       <workItem from="1761680148158" duration="885000" />
-      <workItem from="1761681062609" duration="14414000" />
+      <workItem from="1761681062609" duration="16343000" />
     </task>
     <task id="LOCAL-00001" summary="Moved testable code to Core and generated test">
       <option name="closed" value="true" />
@@ -197,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761762081267</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="completed chapter 8">
+      <option name="closed" value="true" />
+      <created>1761763088193</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1761763088193</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +227,8 @@
     <MESSAGE value="completed chapter 6" />
     <MESSAGE value="test" />
     <MESSAGE value="completed chapter 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed chapter 7" />
+    <MESSAGE value="completed chapter 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed chapter 8" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

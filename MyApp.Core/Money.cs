@@ -5,7 +5,13 @@ namespace MyApp.Core;
 public abstract class Money
 {
     protected int Amount { get; init; }
+    protected string Currency { get; init; }
 
+    public Money(int amount, string currency)
+    {
+        Amount = amount;
+        Currency = currency;
+    }
 
     public override bool Equals(Object other)
     {
@@ -15,13 +21,18 @@ public abstract class Money
 
     public static Money dollar(int amount)
     {
-        return new Dollar(amount);
+        return new Dollar(amount, "USD");
+    }
+
+    public static Money franc(int amount)
+    {
+        return new Franc(amount, "CHF");
     }
 
     public abstract Money times(int multiplier);
 
-    public static Money franc(int amount)
+    public string currency()
     {
-        return new Franc(amount);
+        return Currency;
     }
 }

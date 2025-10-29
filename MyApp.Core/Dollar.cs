@@ -4,13 +4,12 @@ namespace MyApp.Tests;
 
 public class Dollar : Money
 {
-    public Dollar(int amount)
+    public Dollar(int amount, string currency) : base(amount, currency)
     {
-        Amount = amount;
     }
 
     public override Money times(int multiplier)
     {
-        return new Dollar(Amount * multiplier);
+        return dollar(Amount * multiplier);
     }
 }
