@@ -5,7 +5,6 @@ namespace MyApp.Tests;
 
 public class WeatherForecastTest
 {
-
     [Fact]
     public void canSeeWeather()
     {
@@ -21,7 +20,8 @@ public class WeatherForecastTest
             28,
             summaries[2]
         );
-        result.Should().Be(new WeatherForecast(date, 28, "Chilly"));
+
+        result.Should().BeEquivalentTo(new WeatherForecast(date, 28, "Chilly"));
     }
 
     [Fact]

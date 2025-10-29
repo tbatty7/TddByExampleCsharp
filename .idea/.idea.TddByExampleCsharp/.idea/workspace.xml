@@ -9,9 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd8fba98-56f1-4318-a141-eef287832bc1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MyApp.Core/WeatherService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApp.Core/Dollar.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApp.Tests/MoneyConversionTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TddByExampleCsharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TddByExampleCsharp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyApp.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApp.Tests/WeatherForecastTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Tests/WeatherForecastTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TddByExampleCsharp.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/TddByExampleCsharp.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +30,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/559e28422bbc44d6a9b794bc4c0eb1eff83600/f3/0ea0b378/Array.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MyApp.Core/Dollar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Core/WeatherForecast.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/WeatherService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MyApp.Tests/MoneyConversionTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Tests/WeatherForecastTest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Tests/WeatherForecastTest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
@@ -107,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1761680147086</updated>
       <workItem from="1761680148158" duration="885000" />
-      <workItem from="1761681062609" duration="4937000" />
+      <workItem from="1761681062609" duration="7927000" />
     </task>
     <task id="LOCAL-00001" summary="Moved testable code to Core and generated test">
       <option name="closed" value="true" />
@@ -125,7 +130,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761685511477</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Move function to WeatherService.cs">
+      <option name="closed" value="true" />
+      <created>1761686192944</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1761686192944</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added test for WeatherService">
+      <option name="closed" value="true" />
+      <created>1761686645229</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761686645229</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +158,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Moved testable code to Core and generated test" />
     <MESSAGE value="Extracted handler functionality to function and changed WeatherForecast to class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extracted handler functionality to function and changed WeatherForecast to class" />
+    <MESSAGE value="Move function to WeatherService.cs" />
+    <MESSAGE value="Added test for WeatherService" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test for WeatherService" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
