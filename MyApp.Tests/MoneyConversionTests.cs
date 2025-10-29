@@ -67,4 +67,19 @@ public class MoneyConversionTests
         var result = bank.reduce(dollar, "USD");
         Assert.Equal(dollar, result);
     }
+
+    [Fact]
+    public void testReduceMoneyDifferentCurrency()
+    {
+        var bank = new Bank();
+        bank.addRate("CHF", "USD", 2);
+        var result = bank.reduce(Money.franc(2), "USD");
+        Assert.Equal(Money.dollar(1), result);
+    }
+
+    [Fact]
+    public void testIdentityRate()
+    {
+        Assert.Equal(1, new Bank().rate("USD", "USD"));
+    }
 }

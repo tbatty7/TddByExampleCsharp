@@ -49,8 +49,9 @@ public class Money : Expression
         return new Sum(this, addend);
     }
 
-    public Money reduce(string toCurrency)
+    public Money reduce(Bank bank, string toCurrency)
     {
-        return this;
+        var rate = bank.rate(Currency, toCurrency);
+        return new Money(Amount / rate, toCurrency);
     }
 }
