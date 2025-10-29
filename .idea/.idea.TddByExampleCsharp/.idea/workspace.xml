@@ -10,6 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bd8fba98-56f1-4318-a141-eef287832bc1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TddByExampleCsharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TddByExampleCsharp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApp.Core/Dollar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Core/Dollar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApp.Core/Franc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Core/Franc.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyApp.Core/Money.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Core/Money.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyApp.Tests/MoneyConversionTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Tests/MoneyConversionTests.cs" afterDir="false" />
     </list>
@@ -30,6 +32,7 @@
     <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/Dollar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/Money.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Core/Money.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Core/WeatherForecast.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/WeatherService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Tests/MoneyConversionTests.cs" root0="FORCE_HIGHLIGHTING" />
@@ -112,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1761680147086</updated>
       <workItem from="1761680148158" duration="885000" />
-      <workItem from="1761681062609" duration="13570000" />
+      <workItem from="1761681062609" duration="14414000" />
     </task>
     <task id="LOCAL-00001" summary="Moved testable code to Core and generated test">
       <option name="closed" value="true" />
@@ -186,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761758556405</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="completed chapter 7">
+      <option name="closed" value="true" />
+      <created>1761762081267</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1761762081267</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +217,8 @@
     <MESSAGE value="Completed chapter 5" />
     <MESSAGE value="completed chapter 6" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="completed chapter 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed chapter 7" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
