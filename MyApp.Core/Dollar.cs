@@ -2,15 +2,21 @@ namespace MyApp.Tests;
 
 public class Dollar
 {
-    public int Amount { get; set; }
+    public int Amount { get; init; }
 
     public Dollar(int amount)
     {
         Amount = amount;
     }
 
-    public void times(int mutiliplier)
+    public Dollar times(int multiplier)
     {
-        Amount *= mutiliplier;
+        return new Dollar(Amount * multiplier);
+    }
+
+    public bool Equals(Object other)
+    {
+        Dollar? otherDollar = other as Dollar;
+        return Amount == otherDollar.Amount;
     }
 }
