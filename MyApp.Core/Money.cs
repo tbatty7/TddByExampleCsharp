@@ -1,5 +1,3 @@
-using MyApp.Tests;
-
 namespace MyApp.Core;
 
 public class Money : Expression

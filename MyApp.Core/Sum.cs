@@ -1,6 +1,4 @@
-using MyApp.Core;
-
-namespace MyApp.Tests;
+namespace MyApp.Core;
 
 public class Sum(Expression augend, Expression addend) : Expression
 {
