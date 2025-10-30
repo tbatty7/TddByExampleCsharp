@@ -82,4 +82,15 @@ public class MoneyConversionTests
     {
         Assert.Equal(1, new Bank().rate("USD", "USD"));
     }
+
+    [Fact]
+    public void testMixedAddition()
+    {
+        Expression fiveBucks = Money.dollar(5);
+        Expression tenFrancs = Money.franc(10);
+        var bank = new Bank();
+        bank.addRate("CHF", "USD", 2);
+        var result = bank.reduce(fiveBucks.plus(tenFrancs), "USD");
+        Assert.Equal(Money.dollar(10), result);
+    }
 }

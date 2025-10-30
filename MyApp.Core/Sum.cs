@@ -2,14 +2,20 @@ using MyApp.Core;
 
 namespace MyApp.Tests;
 
-public class Sum(Money augend, Money addend) : Expression
+public class Sum(Expression augend, Expression addend) : Expression
 {
-    public Money Augend => augend;
-    public Money Addend => addend;
+    public Expression Augend => augend;
+    public Expression Addend => addend;
 
     public Money reduce(Bank bank, string toCurrency)
     {
-        var amount = Augend.Amount + Addend.Amount;
+        var amount = Augend.reduce(bank, toCurrency).Amount +
+                     Addend.reduce(bank, toCurrency).Amount;
         return new Money(amount, toCurrency);
+    }
+
+    public Expression plus(Expression addend)
+    {
+        return null;
     }
 }

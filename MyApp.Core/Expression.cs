@@ -5,4 +5,5 @@ namespace MyApp.Core;
 public interface Expression
 {
     Money reduce(Bank bank, string toCurrency);
+    Expression plus(Expression addend);
 }
