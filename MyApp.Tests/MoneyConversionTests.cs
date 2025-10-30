@@ -93,4 +93,28 @@ public class MoneyConversionTests
         var result = bank.reduce(fiveBucks.plus(tenFrancs), "USD");
         Assert.Equal(Money.dollar(10), result);
     }
+
+    [Fact]
+    public void testSumPlusMoney()
+    {
+        Expression fiveBucks = Money.dollar(5);
+        Expression tenFrancs = Money.franc(10);
+        var bank = new Bank();
+        bank.addRate("CHF", "USD", 2);
+        var sum = new Sum(fiveBucks, tenFrancs).plus(fiveBucks);
+        var result = bank.reduce(sum, "USD");
+        Assert.Equal(Money.dollar(15), result);
+    }
+
+    [Fact]
+    public void testSumTimes()
+    {
+        Expression fiveBucks = Money.dollar(5);
+        Expression tenFrancs = Money.franc(10);
+        var bank = new Bank();
+        bank.addRate("CHF", "USD", 2);
+        var sum = new Sum(fiveBucks, tenFrancs).times(2);
+        var result = bank.reduce(sum, "USD");
+        Assert.Equal(Money.dollar(20), result);
+    }
 }
