@@ -4,7 +4,7 @@ public class StringStuff
 {
     public string returnIfString(object obj)
     {
-        if (obj is string s) return s;
+        if (obj is string newStringVariable) return newStringVariable;
         return "Not a string";
     }
 
