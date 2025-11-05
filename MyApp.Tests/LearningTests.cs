@@ -175,5 +175,56 @@ namespace MyApp.Tests
             var biggerNumbers = numbers.Select(i => i * 10).ToList();
             Assert.Equal("10, 20, 30", string.Join(", ", biggerNumbers));
         }
+
+        [Fact]
+        public void LinqHasOrderBy()
+        {
+            var names = new List<string> { "Bob", "Charlie", "Alice", "David" };
+            var sortedNames = names.OrderBy(name => name);
+            Assert.Equal("Alice, Bob, Charlie, David", string.Join(", ", sortedNames));
+            var sortedNamesDescending = names.OrderByDescending(name => name);
+            Assert.Equal("David, Charlie, Bob, Alice", string.Join(", ", sortedNamesDescending));
+        }
+
+        [Fact]
+        public void LinqCanOrderObjectsThenBy()
+        {
+            var people = new List<Person>
+            {
+                new() { Name = "Charlie", Age = 30 },
+                new() { Name = "Bob", Age = 25 },
+                new() { Name = "Alice", Age = 30 }
+            };
+
+            var sortedByAge = people.OrderBy(p => p.Age);
+            Assert.Equal("Bob, Charlie, Alice", string.Join(", ", sortedByAge.Select(p => p.Name)));
+
+            var sortedPeople = sortedByAge.ThenBy(p => p.Name);
+            // In this example, ThenBy only applies to Persons with the same age, so this will always stay sorted by age if the ages are different
+            Assert.Equal("Bob, Alice, Charlie",
+                string.Join(", ", sortedPeople.Select(p => p.Name)));
+        }
+
+        [Fact]
+        public void LinqCanGroup()
+        {
+            var people = new List<Person>
+            {
+                new() { Name = "Charlie", Age = 30 },
+                new() { Name = "Bob", Age = 25 },
+                new() { Name = "Alice", Age = 30 }
+            };
+            var groupedPeople = people.GroupBy(p => p.Age);
+            Assert.Equal(2, groupedPeople.Count());
+            Assert.Equal(2, groupedPeople.First(g => g.Key == 25).Count());
+            Assert.Equal(2, groupedPeople.First(g => g.Key == 30).Count());
+        }
+
+        [Fact]
+        public void CountingLists()
+        {
+            var numbers = new List<int> { 1, 2, 3 };
+            Assert.Equal(3, numbers.Count());
+        }
     }
 }
