@@ -1,3 +1,4 @@
+using MyApp.Core;
 using MyApp.Core.Learning;
 using Xunit.Abstractions;
 
@@ -242,6 +243,39 @@ namespace MyApp.Tests
             } while (count < 0);
 
             Assert.Equal(1, count);
+        }
+
+        [Fact]
+        public void LoopThroughPropertiesInRecord()
+        {
+            var personInfo = "";
+            Person person = new() { Name = "Bob", Age = 25 };
+            var fields = person.GetType().GetProperties();
+            foreach (var field in fields) personInfo += $"{field.Name}: {field.GetValue(person)}, ";
+
+            Assert.Equal("Name: Bob, Age: 25, ", personInfo);
+        }
+
+        [Fact]
+        public void LoopThroughPropertiesInClass()
+        {
+            var personInfo = "";
+            var person = Money.dollar(1);
+            var fields = person.GetType().GetProperties();
+            foreach (var field in fields) personInfo += $"{field.Name}: {field.GetValue(person)}, ";
+
+            Assert.Equal("Amount: 1, ", personInfo);
+        }
+
+        [Fact]
+        public void LoopThroughFieldsInStruct()
+        {
+            var personInfo = "";
+            Point person = new() { X = 1, Y = 25 };
+            var fields = person.GetType().GetFields();
+            foreach (var field in fields) personInfo += $"{field.Name}: {field.GetValue(person)}, ";
+
+            Assert.Equal("X: 1, Y: 25, ", personInfo);
         }
     }
 }
