@@ -33,6 +33,7 @@
     <setting file="file://$PROJECT_DIR$/MyApp.Core/Pair.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/Sum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/WeatherService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Tests/LearningTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Tests/LearningTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Tests/MoneyConversionTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Tests/WeatherForecastTest.cs" root0="FORCE_HIGHLIGHTING" />
@@ -117,7 +118,7 @@
       <workItem from="1761833225708" duration="598000" />
       <workItem from="1761920471113" duration="4540000" />
       <workItem from="1762183539428" duration="12761000" />
-      <workItem from="1762439774758" duration="1052000" />
+      <workItem from="1762439774758" duration="1909000" />
     </task>
     <task id="LOCAL-00001" summary="Moved testable code to Core and generated test">
       <option name="closed" value="true" />
@@ -303,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762380025992</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Used Single Assert">
+      <option name="closed" value="true" />
+      <created>1762444616611</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1762444616611</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +346,8 @@
     <MESSAGE value="Added records and switch statements and null checks" />
     <MESSAGE value="Added lists and dictionaries" />
     <MESSAGE value="More LINQ stuff and lists" />
-    <option name="LAST_COMMIT_MESSAGE" value="More LINQ stuff and lists" />
+    <MESSAGE value="Used Single Assert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Used Single Assert" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

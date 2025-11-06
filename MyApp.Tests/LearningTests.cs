@@ -222,5 +222,26 @@ namespace MyApp.Tests
             var numbers = new List<int> { 1, 2, 3 };
             Assert.Equal(3, numbers.Count());
         }
+
+        [Fact]
+        public void WhileLoop()
+        {
+            var count = 0;
+            while (count < 0) count++;
+
+            Assert.Equal(0, count);
+        }
+
+        [Fact]
+        public void DoWhileLoopExecutesAtLeastOnce()
+        {
+            var count = 0;
+            do
+            {
+                count++;
+            } while (count < 0);
+
+            Assert.Equal(1, count);
+        }
     }
 }
