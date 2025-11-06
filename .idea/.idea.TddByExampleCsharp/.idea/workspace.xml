@@ -9,7 +9,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd8fba98-56f1-4318-a141-eef287832bc1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MyApp.Core/Learning/Person.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TddByExampleCsharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TddByExampleCsharp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyApp.Tests/LearningTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Tests/LearningTests.cs" afterDir="false" />
     </list>
@@ -117,7 +116,8 @@
       <workItem from="1761681062609" duration="29485000" />
       <workItem from="1761833225708" duration="598000" />
       <workItem from="1761920471113" duration="4540000" />
-      <workItem from="1762183539428" duration="10754000" />
+      <workItem from="1762183539428" duration="12761000" />
+      <workItem from="1762439774758" duration="1052000" />
     </task>
     <task id="LOCAL-00001" summary="Moved testable code to Core and generated test">
       <option name="closed" value="true" />
@@ -295,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762187606968</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="More LINQ stuff and lists">
+      <option name="closed" value="true" />
+      <created>1762380025992</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1762380025992</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +336,8 @@
     <MESSAGE value="Cleaned up namespaces" />
     <MESSAGE value="Added records and switch statements and null checks" />
     <MESSAGE value="Added lists and dictionaries" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added lists and dictionaries" />
+    <MESSAGE value="More LINQ stuff and lists" />
+    <option name="LAST_COMMIT_MESSAGE" value="More LINQ stuff and lists" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

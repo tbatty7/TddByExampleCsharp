@@ -1,10 +1,6 @@
 using MyApp.Core.Learning;
 using Xunit.Abstractions;
 
-namespace MyApp.Core
-{
-}
-
 namespace MyApp.Tests
 {
     public class LearningTests
@@ -216,7 +212,7 @@ namespace MyApp.Tests
             };
             var groupedPeople = people.GroupBy(p => p.Age);
             Assert.Equal(2, groupedPeople.Count());
-            Assert.Equal(2, groupedPeople.First(g => g.Key == 25).Count());
+            Assert.Single(groupedPeople.First(g => g.Key == 25));
             Assert.Equal(2, groupedPeople.First(g => g.Key == 30).Count());
         }
 
