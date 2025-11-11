@@ -9,12 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd8fba98-56f1-4318-a141-eef287832bc1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MyApp.Core/IRandom.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyApp.Core/SharedRandom.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyApp.Tests/MockingTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TddByExampleCsharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TddByExampleCsharp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyApp.Core/WeatherService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Core/WeatherService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyApp.Tests/MyApp.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Tests/MyApp.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApp.Tests/MockingTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Tests/MockingTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +36,9 @@
     <setting file="file://$PROJECT_DIR$/MyApp.Core/Sum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/WeatherService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Tests/LearningTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Tests/MockingTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Tests/MockingTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Tests/MockingTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Tests/MockingTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Tests/MoneyConversionTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Tests/WeatherForecastTest.cs" root0="FORCE_HIGHLIGHTING" />
@@ -129,7 +128,7 @@
       <workItem from="1762533799620" duration="598000" />
       <workItem from="1762619731777" duration="599000" />
       <workItem from="1762785555538" duration="1313000" />
-      <workItem from="1762872584070" duration="8663000" />
+      <workItem from="1762872584070" duration="10017000" />
     </task>
     <task id="LOCAL-00001" summary="Moved testable code to Core and generated test">
       <option name="closed" value="true" />
@@ -347,7 +346,39 @@
       <option name="project" value="LOCAL" />
       <updated>1762890793616</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Create test mocking a random number generator">
+      <option name="closed" value="true" />
+      <created>1762897062863</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1762897062863</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Remove duplicate mock setup">
+      <option name="closed" value="true" />
+      <created>1762897123008</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1762897123008</updated>
+    </task>
+    <task id="LOCAL-00030" summary="remove comments">
+      <option name="closed" value="true" />
+      <created>1762897163041</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1762897163041</updated>
+    </task>
+    <task id="LOCAL-00031" summary="refactor assert for better failure messages">
+      <option name="closed" value="true" />
+      <created>1762897308903</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1762897308903</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,10 +389,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Move function to WeatherService.cs" />
-    <MESSAGE value="Added test for WeatherService" />
-    <MESSAGE value="Completed TDD by Example Chapter 1" />
-    <MESSAGE value="finished chapter 3" />
     <MESSAGE value="Completed chapter 5" />
     <MESSAGE value="completed chapter 6" />
     <MESSAGE value="test" />
@@ -383,7 +410,11 @@
     <MESSAGE value="Added For loops" />
     <MESSAGE value="loop through fields and properties in classes, structs, and records" />
     <MESSAGE value="Added Live Templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Live Templates" />
+    <MESSAGE value="Create test mocking a random number generator" />
+    <MESSAGE value="Remove duplicate mock setup" />
+    <MESSAGE value="remove comments" />
+    <MESSAGE value="refactor assert for better failure messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor assert for better failure messages" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

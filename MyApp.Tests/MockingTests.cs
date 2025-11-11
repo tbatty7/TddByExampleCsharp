@@ -31,7 +31,7 @@ public class MockingTests
         Assert.Equal(expectedSummaries, forecasts.Select(f => f.Summary).ToList());
         Assert.All(forecasts, f => Assert.Equal(42, f.TemperatureC));
 
-        mockRng.Verify(r => r.Next(It.Is<int>(len => len == 10)), Times.Exactly(5));
+        mockRng.Verify(r => r.Next(10), Times.Exactly(5));
         mockRng.Verify(r => r.Next(-20, 55), Times.Exactly(5));
         mockRng.VerifyNoOtherCalls();
     }
@@ -40,7 +40,7 @@ public class MockingTests
     public void EnumerableRange()
     {
         var range = Enumerable.Range(1, 5);
-        Assert.Equal(new[] { 1, 2, 3, 4, 5 }, range);
+        Assert.Equal([1, 2, 3, 4, 5], range);
         Assert.Equal(1, range.First());
     }
 }
