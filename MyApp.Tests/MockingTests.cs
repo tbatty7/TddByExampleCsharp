@@ -28,7 +28,7 @@ public class MockingTests
 
         Assert.Equal(5, forecasts.Length);
         var expectedSummaries = new[] { "Freezing", "Bracing", "Chilly", "Cool", "Mild" };
-        Assert.True(forecasts.Select(f => f.Summary).SequenceEqual(expectedSummaries));
+        Assert.Equal(expectedSummaries, forecasts.Select(f => f.Summary).ToList());
         Assert.All(forecasts, f => Assert.Equal(42, f.TemperatureC));
 
         mockRng.Verify(r => r.Next(It.Is<int>(len => len == 10)), Times.Exactly(5));
