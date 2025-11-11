@@ -1,11 +1,13 @@
-using System;
-using System.Linq;
-
 namespace MyApp.Core;
 
 public static class WeatherService
 {
     public static WeatherForecast[] ProvideWeatherForecasts()
+    {
+        return ProvideWeatherForecasts(new SharedRandom());
+    }
+
+    public static WeatherForecast[] ProvideWeatherForecasts(IRandom numberGenerator)
     {
         var weatherSummaries = new[]
         {
@@ -15,11 +17,11 @@ public static class WeatherService
 
         var weatherForecasts = Enumerable.Range(1, 5).Select(index =>
         {
-            var next = Random.Shared.Next(weatherSummaries.Length);
+            var next = numberGenerator.Next(weatherSummaries.Length);
             return new WeatherForecast
             (
                 DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                Random.Shared.Next(-20, 55),
+                numberGenerator.Next(-20, 55),
                 weatherSummaries[next]
             );
         }).ToArray();

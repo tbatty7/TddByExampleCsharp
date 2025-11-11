@@ -9,8 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd8fba98-56f1-4318-a141-eef287832bc1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MyApp.Core/IRandom.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApp.Core/SharedRandom.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApp.Tests/MockingTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TddByExampleCsharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TddByExampleCsharp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyApp.Tests/LearningTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Tests/LearningTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApp.Core/WeatherService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Core/WeatherService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApp.Tests/MyApp.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp.Tests/MyApp.Tests.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,14 +31,16 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/559e28422bbc44d6a9b794bc4c0eb1eff83600/f3/0ea0b378/Array.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/Bank.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/Expression.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MyApp.Core/IRandom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/Learning/Point.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/Learning/StringStuff.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/Money.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/Pair.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MyApp.Core/SharedRandom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/Sum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Core/WeatherService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/tim/repos/c-sharp/TddByExampleCsharp/MyApp.Tests/LearningTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Tests/LearningTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MyApp.Tests/MockingTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Tests/MoneyConversionTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyApp.Tests/WeatherForecastTest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -123,7 +129,7 @@
       <workItem from="1762533799620" duration="598000" />
       <workItem from="1762619731777" duration="599000" />
       <workItem from="1762785555538" duration="1313000" />
-      <workItem from="1762872584070" duration="2412000" />
+      <workItem from="1762872584070" duration="8663000" />
     </task>
     <task id="LOCAL-00001" summary="Moved testable code to Core and generated test">
       <option name="closed" value="true" />
@@ -333,7 +339,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762455528267</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added Live Templates">
+      <option name="closed" value="true" />
+      <created>1762890793616</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1762890793616</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +358,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Extracted handler functionality to function and changed WeatherForecast to class" />
     <MESSAGE value="Move function to WeatherService.cs" />
     <MESSAGE value="Added test for WeatherService" />
     <MESSAGE value="Completed TDD by Example Chapter 1" />
@@ -369,7 +382,8 @@
     <MESSAGE value="Used Single Assert" />
     <MESSAGE value="Added For loops" />
     <MESSAGE value="loop through fields and properties in classes, structs, and records" />
-    <option name="LAST_COMMIT_MESSAGE" value="loop through fields and properties in classes, structs, and records" />
+    <MESSAGE value="Added Live Templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Live Templates" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
