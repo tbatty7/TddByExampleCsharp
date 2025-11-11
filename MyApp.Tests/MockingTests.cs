@@ -22,11 +22,6 @@ public class MockingTests
             .Returns(3)
             .Returns(4);
 
-        mockRng
-            .Setup(r => r.Next(
-                It.IsAny<int>(),
-                It.IsAny<int>()))
-            .Returns(42);
         // We also expect 5 calls to Next(-20, 55) for temperatures.
         mockRng
             .Setup(r => r.Next(-20, 55))
