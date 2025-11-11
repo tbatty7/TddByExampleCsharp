@@ -6,11 +6,11 @@ namespace MyApp.Tests
 {
     public class LearningTests
     {
-        private readonly ITestOutputHelper testOutputHelper;
+        private readonly ITestOutputHelper logger;
 
         public LearningTests(ITestOutputHelper testOutputHelper)
         {
-            this.testOutputHelper = testOutputHelper;
+            logger = testOutputHelper;
         }
 
         [Fact]
@@ -36,12 +36,12 @@ namespace MyApp.Tests
             var evensEnumerable = nums.Where(n => n % 2 == 0).Select(n => n * 10);
             foreach (var i in evensEnumerable)
             {
-                testOutputHelper.WriteLine("Proper log: " + i);
+                logger.WriteLine("Proper log: " + i);
                 Console.WriteLine("You cannot see me in tests!");
             }
 
             var evensList = evensEnumerable.ToList();
-            foreach (var i in evensList) testOutputHelper.WriteLine("Proper log: " + i);
+            foreach (var i in evensList) logger.WriteLine("Proper log: " + i);
 
             Assert.Equal(evensList, new List<int> { 20, 40, 60 });
         }
@@ -137,7 +137,7 @@ namespace MyApp.Tests
         [Fact]
         public void UsingTryGetValue()
         {
-            var emptyDict = new Dictionary<string, string>();
+            Dictionary<string, string> emptyDict = new();
             var util = new LargerStructures();
 
             var result = util.TryGetValue(emptyDict, "key");
